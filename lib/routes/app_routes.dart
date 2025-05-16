@@ -249,13 +249,17 @@ class AppRoutes {
         title: const Text('Page Not Found'),
         leading: BackButton(onPressed: () => Get.offAllNamed(customerHome)),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.error_outline, size: 48, color: Colors.red),
-            SizedBox(height: 16),
-            Text('The requested page was not found'),
+            const Icon(Icons.error_outline, size: 48, color: Colors.red),
+            const SizedBox(height: 16),
+            const Text('The requested page was not found'),
+            TextButton(
+              onPressed: () => Get.offAllNamed(customerHome),
+              child: const Text('Go Home'),
+            ),
           ],
         ),
       ),
