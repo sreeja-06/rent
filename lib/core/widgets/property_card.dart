@@ -4,6 +4,7 @@ import '../../config/constants.dart';
 import '../../models/property_model.dart';
 import 'property_feature.dart';
 import 'property_tag.dart';
+import '../../core/utils/date_formatters.dart';
 
 class PropertyCard extends StatelessWidget {
   final Property property;
@@ -299,6 +300,5 @@ class PropertyCard extends StatelessWidget {
     );
   }
 
-  bool get _isNewListing => 
-      DateTime.now().difference(property.createdAt).inDays < 7;
+  bool get _isNewListing => DateFormatters.isNew(property.createdAt);
 }

@@ -18,4 +18,8 @@ class DateFormatters {
   static String formatDate(DateTime date) {
     return '${date.month}/${date.day}/${date.year}';
   }
+
+  static bool isNew(DateTime date) {
+    return DateTime.now().difference(date).inDays < 7;
+  }
 }
