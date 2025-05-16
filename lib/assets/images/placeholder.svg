@@ -1,0 +1,6 @@
+// This is a simple placeholder SVG
+// You can replace it with an actual image file later
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#cccccc"/>
+  <text x="50%" y="50%" font-family="Arial" font-size="20" text-anchor="middle" fill="#666666">Image Placeholder</text>
+</svg>
